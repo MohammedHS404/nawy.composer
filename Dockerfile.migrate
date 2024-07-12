@@ -18,5 +18,11 @@ COPY ./migrateAndSeed.sh /usr/src/app/migrateAndSeed.sh
 # Make the script executable
 RUN chmod +x /usr/src/app/migrateAndSeed.sh
 
+RUN apk add dos2unix
+
+# Convert the script to Unix format
+
+RUN dos2unix /usr/src/app/migrateAndSeed.sh
+
 # Command to run the script
 CMD ["./migrateAndSeed.sh"]

@@ -15,8 +15,9 @@
 - Exposes port 3000 internally for sibling services and 3000 externally for host access
 - Depends on api service
 # Running
+- Run `docker-compose build` to build all services
 - Run `docker-compose up` to start all services
-- Wait 10-15 seconds for the db to be ready
+- Wait 10-30 seconds for the db to be ready and the migrations to run (Open docker to monitor the services)
 - Open http://localhost:5000/api in your browser to access the API
 - Open http://localhost:3000 in your browser to access the UI
 - You can also access the db using SQL Server Management Studio with the connection string `Server=localhost,1313;User Id=sa;Password=Mario1234!;trustServerCertificate=true;`

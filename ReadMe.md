@@ -15,7 +15,7 @@
 - Exposes port 3000 internally for sibling services and 3000 externally for host access
 - Depends on api service
 # Running
-- Run `docker-compose up` to start all services
+- Run `docker-compose up --detached` to start all services
 - Wait 10-15 seconds for the db to be ready
 - Open http://localhost:5000/api in your browser to access the API
 - Open http://localhost:3000 in your browser to access the UI

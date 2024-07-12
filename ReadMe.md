@@ -16,7 +16,7 @@
 - Depends on api service
 # Running
 - Run `docker-compose build` to build all services
-- Run `docker-compose up` to start all services
+- Run `docker-compose up --detached` to start all services
 - Wait 10-30 seconds for the db to be ready and the migrations to run (Open docker to monitor the services)
 - Open http://localhost:5000/api in your browser to access the API
 - Open http://localhost:3000 in your browser to access the UI
